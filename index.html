@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sachin - Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Sachin</span>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun sun-icon"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+                
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-name">
+                        <span class="typed-text" id="typed-text">Hi, I'm Sachin</span>
+                        <span class="cursor" id="cursor">|</span>
+                    </h1>
+                    <h2 class="hero-title">Full Stack Developer | Java | React.js Enthusiast</h2>
+                    <p class="hero-description">
+                        Aspiring software engineer with a strong foundation in Data Structures, Algorithms, and Object-Oriented Programming, 
+                        seeking to leverage problem-solving skills and collaborative experience in software development roles.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn--primary">
+                            <i class="fas fa-code"></i>
+                            View Projects
+                        </a>
+                        <a href="https://www.linkedin.com/in/sachin-m-178904257/" target="_blank" class="btn btn--secondary">
+                            <i class="fab fa-linkedin"></i>
+                            LinkedIn Profile
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <div class="profile-image">
+                            <img src="./assets/images/portfolio.jpg" alt="Sachin's Profile" class="profile-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                            <div class="profile-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <!-- <div class="floating-elements">
+                            <div class="floating-element">💻</div>
+                            <div class="floating-element">⚡</div>
+                            <div class="floating-element">🚀</div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            
+            <div class="skills-categories">
+                <div class="skill-category">
+                    <h3 class="category-title">Programming Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="java">
+                            <div class="skill-logo">
+                                <img src="./assets/images/logo/java.png" alt="Java" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                                <div class="skill-icon">☕</div>
+                            </div>
+                            <h4>Java</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="90"></div>
+                            </div>
+                            <span class="skill-level">90%</span>
+                        </div>
+                        <div class="skill-card" data-skill="python">
+                            <div class="skill-logo">
+                                <img src="./assets/images/logo/python.png" alt="Python" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                                <div class="skill-icon">🐍</div>
+                            </div>
+                            <h4>Python</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="75"></div>
+                            </div>
+                            <span class="skill-level">75%</span>
+                        </div>
+                        <div class="skill-card" data-skill="javascript">
+                            <div class="skill-logo">
+                                <img src="./assets/images/logo/javascript.png" alt="JavaScript" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                                <div class="skill-icon">📜</div>
+                            </div>
+                            <h4>JavaScript</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="85"></div>
+                            </div>
+                            <span class="skill-level">85%</span>
+                        </div>
+                        <div class="skill-card" data-skill="html">
+                            <div class="skill-logo">
+                                <img src="./assets/images/logo/html.png" alt="HTML5" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                                <div class="skill-icon">🌐</div>
+                            </div>
+                            <h4>HTML5</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="95"></div>
+                            </div>
+                            <span class="skill-level">95%</span>
+                        </div>
+                        <div class="skill-card" data-skill="css">
+                            <div class="skill-logo">
+                                <img src="./assets/images/logo/css.png" alt="CSS3" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                                <div class="skill-icon">🎨</div>
+                            </div>
+                            <h4>CSS3</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="90"></div>
+                            </div>
+                            <span class="skill-level">90%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Frameworks & Libraries</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="react">
+                            <div class="skill-logo">
+                                <img src="./assets/images/logo/react.png" alt="React.js" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                                <div class="skill-icon">⚛️</div>
+                            </div>
+                            <h4>React.js</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="80"></div>
+                            </div>
+                            <span class="skill-level">80%</span>
+                        </div>
+                        <div class="skill-card" data-skill="node">
+                            <div class="skill-logo">
+                                <img src="./assets/images/logo/nodejs.png" alt="Node.js" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                                <div class="skill-icon">🟢</div>
+                            </div>
+                            <h4>Node.js</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="75"></div>
+                            </div>
+                            <span class="skill-level">75%</span>
+                        </div>
+                        <div class="skill-card" data-skill="express">
+                            <div class="skill-logo">
+                                <img src="./assets/images/logo/express.png" alt="Express.js" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                                <div class="skill-icon">🚂</div>
+                            </div>
+                            <h4>Express.js</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="70"></div>
+                            </div>
+                            <span class="skill-level">70%</span>
+                        </div>
+                        <div class="skill-card" data-skill="spring">
+                            <div class="skill-logo">
+                                <img src="./assets/images/logo/spring.png" alt="Spring" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                                <div class="skill-icon">🌱</div>
+                            </div>
+                            <h4>Spring</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="65"></div>
+                            </div>
+                            <span class="skill-level">65%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Tools & Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="git">
+                            <div class="skill-logo">
+                                <img src="./assets/images/logo/git.png" alt="Git" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                                <div class="skill-icon">📂</div>
+                            </div>
+                            <h4>Git</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="85"></div>
+                            </div>
+                            <span class="skill-level">85%</span>
+                        </div>
+                        <div class="skill-card" data-skill="docker">
+                            <div class="skill-logo">
+                                <img src="./assets/images/logo/docker.png" alt="Docker" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                                <div class="skill-icon">🐳</div>
+                            </div>
+                            <h4>Docker</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="60"></div>
+                            </div>
+                            <span class="skill-level">60%</span>
+                        </div>
+                        <div class="skill-card" data-skill="vscode">
+                            <div class="skill-logo">
+                                <img src="./assets/images/logo/vscode.png" alt="VS Code" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                                <div class="skill-icon">💻</div>
+                            </div>
+                            <h4>VS Code</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="95"></div>
+                            </div>
+                            <span class="skill-level">95%</span>
+                        </div>
+                        <div class="skill-card" data-skill="intellij">
+                            <div class="skill-logo">
+                                <img src="./assets/images/logo/IntelliJ.png" alt="IntelliJ IDEA" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                                <div class="skill-icon">🧠</div>
+                            </div>
+                            <h4>IntelliJ IDEA</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="85"></div>
+                            </div>
+                            <span class="skill-level">85%</span>
+                        </div>
+                        <div class="skill-card" data-skill="linux">
+                            <div class="skill-logo">
+                                <img src="./assets/images/logo/linux.png" alt="Linux" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                                <div class="skill-icon">🐧</div>
+                            </div>
+                            <h4>Linux</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="70"></div>
+                            </div>
+                            <span class="skill-level">70%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Databases</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="mysql">
+                            <div class="skill-logo">
+                                <img src="./assets/images/logo/mysql.png" alt="MySQL" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                                <div class="skill-icon">🗄️</div>
+                            </div>
+                            <h4>MySQL</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="75"></div>
+                            </div>
+                            <span class="skill-level">75%</span>
+                        </div>
+                        <div class="skill-card" data-skill="mongodb">
+                            <div class="skill-logo">
+                                <img src="./assets/images/logo/MongoDB.png" alt="MongoDB" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                                <div class="skill-icon">🍃</div>
+                            </div>
+                            <h4>MongoDB</h4>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-progress="70"></div>
+                            </div>
+                            <span class="skill-level">70%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card featured" data-category="game">
+                    <div class="project-header">
+                        <div class="project-icon">🎮</div>
+                        <span class="project-category">Game Development</span>
+                    </div>
+                    <h3 class="project-title">Pet Battle Game</h3>
+                    <p class="project-type">Java Game Application</p>
+                    <p class="project-description">
+                        Java OOP-based terminal pet battle game demonstrating inheritance, polymorphism, encapsulation, and abstraction. 
+                        Features turn-based combat system with AI opponents and strategic gameplay mechanics for an immersive gaming experience.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">OOP</span>
+                        <span class="tech-tag">Design Patterns</span>
+                        <span class="tech-tag">Game Logic</span>
+                        <span class="tech-tag">AI</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/Sachinm31/Pet-Battle-Game" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card featured" data-category="web">
+                    <div class="project-header">
+                        <div class="project-icon">🍕</div>
+                        <span class="project-category">Web Development</span>
+                    </div>
+                    <h3 class="project-title">Food Delivery Website</h3>
+                    <p class="project-type">Full-Stack Web Application</p>
+                    <p class="project-description">
+                        Full-stack food delivery platform with real-time order tracking, user authentication, 
+                        payment integration, and admin dashboard. Built with modern web technologies for seamless user experience and restaurant management.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Socket.io</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/Sachinm31/Food-Delivery" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card featured" data-category="enterprise">
+                    <div class="project-header">
+                        <div class="project-icon">🏥</div>
+                        <span class="project-category">Enterprise Software</span>
+                    </div>
+                    <h3 class="project-title">Hospital Management System</h3>
+                    <p class="project-type">Enterprise Application</p>
+                    <p class="project-description">
+                        Comprehensive Java-based hospital management system for patient records, appointment scheduling, 
+                        doctor management, and medical inventory. Demonstrates advanced OOP principles and database integration for healthcare workflows.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">OOP</span>
+                        <span class="tech-tag">Database Design</span>
+                        <span class="tech-tag">JDBC</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/Sachinm31/Hospital-Management-System-Using-Java" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="frontend">
+                    <div class="project-header">
+                        <div class="project-icon">🌤️</div>
+                        <span class="project-category">Frontend Development</span>
+                    </div>
+                    <h3 class="project-title">Weather Application</h3>
+                    <p class="project-type">Frontend Web Application</p>
+                    <p class="project-description">
+                        Responsive weather app providing real-time weather information with clean UI/UX design. 
+                        Features location-based weather data, forecasts, and interactive design elements using modern web technologies.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Weather API</span>
+                        <span class="tech-tag">Geolocation</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/Sachinm31/weather-App" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="oop">
+                    <div class="project-header">
+                        <div class="project-icon">🍕</div>
+                        <span class="project-category">OOP Practice</span>
+                    </div>
+                    <h3 class="project-title">Pizza Bill Calculator</h3>
+                    <p class="project-type">Java Console Application</p>
+                    <p class="project-description">
+                        Java OOP project demonstrating object-oriented design principles through a pizza ordering 
+                        and billing system. Features customizable orders, pricing calculations, and receipt generation with clean code architecture.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">OOP</span>
+                        <span class="tech-tag">Console Application</span>
+                        <span class="tech-tag">Design Patterns</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/Sachinm31/Java_oops_PizzaBilll" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="algorithms">
+                    <div class="project-header">
+                        <div class="project-icon">📊</div>
+                        <span class="project-category">Algorithm Practice</span>
+                    </div>
+                    <h3 class="project-title">DSA Practice Repository</h3>
+                    <p class="project-type">Educational Repository</p>
+                    <p class="project-description">
+                        Comprehensive collection of Data Structures and Algorithms implementations and practice problems in Java. 
+                        Covers arrays, linked lists, trees, graphs, sorting, and searching algorithms with detailed explanations and complexity analysis.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Data Structures</span>
+                        <span class="tech-tag">Algorithms</span>
+                        <span class="tech-tag">Problem Solving</span>
+                        <span class="tech-tag">Analysis</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/Sachinm31/DSA_Java" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="data-structures">
+                    <div class="project-header">
+                        <div class="project-icon">📚</div>
+                        <span class="project-category">Data Structures</span>
+                    </div>
+                    <h3 class="project-title">Stack and Queue Implementation</h3>
+                    <p class="project-type">Data Structures Implementation</p>
+                    <p class="project-description">
+                        Focused implementation of Stack and Queue data structures with various operations and applications. 
+                        Includes practical examples and performance analysis of different implementations for educational purposes.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Data Structures</span>
+                        <span class="tech-tag">Stack</span>
+                        <span class="tech-tag">Queue</span>
+                        <span class="tech-tag">Performance Analysis</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/Sachinm31/Stack_and_Queue" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            
+            <div class="education-card">
+                <div class="education-logo">
+                    <img src="./assets/images/logo/cmr-university.jpeg" alt="CMR University Logo" class="university-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="logo-placeholder">
+                        <i class="fas fa-university"></i>
+                        <span>CMR</span>
+                    </div>
+                </div>
+                <div class="education-content">
+                    <div class="education-header">
+                        <h3>Bachelor of Technology in Computer Science and Engineering</h3>
+                        <div class="education-badge">
+                            <span class="duration-badge">Dec 2021 – May 2025</span>
+                        </div>
+                    </div>
+                    <div class="education-details">
+                        <div class="institution-info">
+                            <h4>CMR University</h4>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Bangalore, Karnataka</p>
+                        </div>
+                        <div class="academic-info">
+                            <div class="cgpa-display">
+                                <span class="cgpa-label">CGPA</span>
+                                <span class="cgpa-value">8.3</span>
+                                <span class="cgpa-scale">/10</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="education-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-trophy"></i>
+                            <span>Strong foundation in Computer Science fundamentals</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <span>Specialized in Software Development & Data Structures</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            
+            <div class="experience-card">
+                <div class="experience-logo">
+                    <img src="./assets/images/logo/winman.png" alt="Winman Software Logo" class="company-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="logo-placeholder">
+                        <i class="fas fa-building"></i>
+                        <span>Winman</span>
+                    </div>
+                </div>
+                <div class="experience-content">
+                    <div class="experience-header">
+                        <h3>Trainee QA Engineer</h3>
+                        <div class="experience-badge">
+                            <span class="duration-badge current">May 2025 – Present</span>
+                        </div>
+                    </div>
+                    <div class="experience-details">
+                        <div class="company-info">
+                            <h4>Winman Software India LLP</h4>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Mangalore, Karnataka</p>
+                        </div>
+                    </div>
+                    <div class="achievements-list">
+                        <h5>Key Achievements & Responsibilities:</h5>
+                        <ul class="achievements">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Gained hands-on experience in industry-level software development projects</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Strengthened problem-solving and collaboration skills through teamwork</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Learned and applied Software Testing Life Cycle (STLC) and Agile methodologies</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skills-gained">
+                        <h5>Skills & Technologies:</h5>
+                        <div class="experience-skills">
+                            <span class="skill-tag">QA Testing</span>
+                            <span class="skill-tag">STLC</span>
+                            <span class="skill-tag">Agile</span>
+                            <span class="skill-tag">Team Collaboration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements-section">
+        <div class="container">
+            <h2 class="section-title">Achievements & Certifications</h2>
+            
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">💻</div>
+                    <h3>LeetCode Problem Solving</h3>
+                    <p>Solved 200+ algorithm problems, improving problem-solving skills and coding efficiency</p>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">📄</div>
+                    <h3>Research Publication</h3>
+                    <p>Smart Finance using Generative AI - Published research paper on AI-powered finance management system</p>
+                    <span class="achievement-date">April 2025</span>
+                </div>
+                
+                <div class="achievement-card">
+                    <div class="achievement-icon">🏆</div>
+                    <h3>Web Development Certification</h3>
+                    <p>Completed Responsive Web Design and Full-Stack Web Development certifications</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Download Section -->
+    <section class="resume-download">
+        <div class="container">
+            <div class="download-card">
+                <div class="download-content">
+                    <h2>Download My Resume</h2>
+                    <p>Get a comprehensive overview of my skills, experience, and projects</p>
+                    <a href="./assets/Sachin_Resume.pdf" download class="download-btn">
+                        <i class="fas fa-download"></i>
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in new opportunities and collaborations. Feel free to reach out!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>sachinkundapura31@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9632552210</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Bengaluru, India</span>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/Sachinm31" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sachin-m-178904257/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://leetcode.com/u/Sachinm3119/" target="_blank" class="social-link">
+                            <i class="fas fa-code"></i>
+                        </a>
+                        <a href="mailto:sachinkundapura31@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required class="form-control"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Sachin. All rights reserved. Built with ❤️ and lots of ☕</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
