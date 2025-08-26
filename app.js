@@ -500,14 +500,6 @@ class ContactForm {
 
     handleSubmit(e) {
         e.preventDefault();
-        
-        const formData = new FormData(this.form);
-        const data = {
-            name: formData.get('name'),
-            email: formData.get('email'),
-            subject: formData.get('subject'),
-            message: formData.get('message')
-        };
 
         // Show loading state
         const submitBtn = this.form.querySelector('.submit-btn');
@@ -515,13 +507,23 @@ class ContactForm {
         submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
         submitBtn.disabled = true;
 
-        // Simulate form submission
-        setTimeout(() => {
-            this.showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
+        // Send using EmailJS
+        emailjs.sendForm(
+            "YOUR_SERVICE_ID",   // replace with your EmailJS Service ID
+            "YOUR_TEMPLATE_ID",  // replace with your EmailJS Template ID
+            this.form,
+            "YOUR_PUBLIC_KEY"    // replace with your EmailJS Public Key
+        )
+        .then(() => {
+            this.showNotification("✅ Message sent successfully! I'll get back to you soon.", "success");
             this.form.reset();
             submitBtn.innerHTML = originalText;
             submitBtn.disabled = false;
-        }, 2000);
+        }, (error) => {
+            this.showNotification("❌ Failed to send message: " + error.text, "error");
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+        });
     }
 
     showNotification(message, type = 'success') {
@@ -559,6 +561,9 @@ class ContactForm {
         }, 4000);
     }
 }
+
+// Initialize the form
+new ContactForm();
 
 // Project Interactions
 class ProjectInteractions {
@@ -1106,3 +1111,4 @@ const portfolioApp = new PortfolioApp();
 
 // Export for potential external use
 window.PortfolioApp = PortfolioApp;
+
