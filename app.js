@@ -509,10 +509,10 @@ class ContactForm {
 
         // Send using EmailJS
         emailjs.sendForm(
-            "YOUR_SERVICE_ID",   // replace with your EmailJS Service ID
-            "YOUR_TEMPLATE_ID",  // replace with your EmailJS Template ID
+            "Sachin311912",   // replace with your EmailJS Service ID
+            "template_95syeru",  // replace with your EmailJS Template ID
             this.form,
-            "YOUR_PUBLIC_KEY"    // replace with your EmailJS Public Key
+            "zSVa5d1HwjhULiEcm"    // replace with your EmailJS Public Key
         )
         .then(() => {
             this.showNotification("✅ Message sent successfully! I'll get back to you soon.", "success");
