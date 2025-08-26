@@ -205,6 +205,8 @@
   }
 }
 
+
+
 /* Data attribute for manual theme switching */
 [data-color-scheme="dark"] {
   /* RGB versions for opacity control (dark mode) */
@@ -756,7 +758,7 @@ select.form-control {
    --bg-gradient: var(--gradient-primary-light);
   --card-gradient: var(--gradient-card-light);
   --text-primary: #1e293b;
-  --text-secondary: #64748b;
+  --text-secondary: #283628;
   --text-accent: #047857; /* Dark green instead of pink */
   --card-bg: rgba(255, 255, 255, 0.9);
   --card-border: rgba(0, 0, 0, 0.1);
@@ -1978,7 +1980,7 @@ p {
     background: var(--nav-bg);
     backdrop-filter: var(--nav-blur);
     flex-direction: column;
-    padding: 2rem 2rem;
+    padding: 2rem ;
     transform: translateY(-100%);
     transition: transform 0.3s ease;
     border-top: 1px solid var(--card-border);
